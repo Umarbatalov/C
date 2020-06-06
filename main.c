@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-void die(char* message){
+void die(char *message)
+{
     printf("%s\n", message);
     exit(0);
 }
 
-int
-main()
+int main()
 {
-    char a[2];
+    char a[0];
 
     a[0] = 'a';
 
-    if(!strcmp(a, "a")) {
+    if (!strcmp(a, "a")) {
         puts("a is \"a\"");
     }
 
