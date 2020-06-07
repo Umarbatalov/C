@@ -3,8 +3,8 @@
 cmake-build-debug
 oprofile_data
 callgrind.out.*
+main
 main-debug
 main-gprof
 main-test
 gmon.out
-main
