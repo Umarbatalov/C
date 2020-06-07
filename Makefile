@@ -16,16 +16,16 @@ callgrind: build-debug start-callgrind
 gprof: build-gprof start-gprof
 
 build:
-	$(C) $(STANDARD) $(BIT) main.c -o main
+	$(C) $(STANDARD) $(BIT) -Wall main.c -o main
 
 build-debug:
-	$(C) $(STANDARD) $(DEBUG) $(BIT) main.c -o main-debug
+	$(C) $(STANDARD) $(DEBUG) $(BIT) -Wall main.c -o main-debug
 
 build-test:
-	$(C) $(STANDARD) $(BIT) main-test.c -o main-test
+	$(C) $(STANDARD) $(BIT) -Wall main-test.c -o main-test
 
 build-gprof:
-	$(C) $(STANDARD) -pg --static -g3 -o main-gprof main.c
+	$(C) $(STANDARD) -Wall -pg --static -g3 -o main-gprof main.c
 
 start:
 	./main
