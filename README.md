@@ -1,2 +1,1 @@
-# c
-Some c code
+
